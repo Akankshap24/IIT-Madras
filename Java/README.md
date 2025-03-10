@@ -28,3 +28,17 @@
   - Programming languages express these abstract ideas.  
   - 🔄 **Compilers & interpreters** translate high-level code into machine language.  
   - ⚖️ **Trade-off:** More abstraction means less control over hardware but fewer errors.  
+
+
+### Styles of Programming  
+
+#### ⚡ Imperative vs. Declarative  
+
+| Feature             | 🏗️ Imperative Programming | 🎯 Declarative Programming |
+|---------------------|--------------------------|----------------------------|
+| **Focus**          | How to compute            | What the computation should produce |
+| **Approach**       | Step-by-step instructions | Defines results in terms of smaller computations |
+| **Usage**          | Uses loops, conditionals  | Uses functions and transformations |
+| **Intermediate Variables** | Commonly used | Typically avoided |
+| **Example**        | Procedural languages (C, Java) | Functional languages (Haskell, SQL) |
+
