@@ -84,3 +84,14 @@ def sum_square_even(n):
 - **Uses loops and conditions** to find even numbers and square them.  
 - **Can be written in a functional style** to improve reusability.  
 - **Helps break the problem into smaller, reusable units of code.**  
+
+### **Names, Types, and Values**  
+
+- Computers store everything as `bits` (no difference between data and instructions).  
+- `Types` help interpret bits as **numbers, characters, or booleans**.  
+- **Type rules define:**  
+  - Allowed values (e.g., `integers`, `floats`).  
+  - Valid operations (e.g., `addition`, `comparison`).  
+- **Strict type-checking** prevents errors:  
+  - **Wrong expressions** (e.g., **dimension mismatch** in math).  
+  - **Incorrect assignments** (e.g., assigning `text` to a `number` variable).  
