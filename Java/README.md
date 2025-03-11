@@ -114,3 +114,11 @@ def sum_square_even(n):
   - `my_list.sort()`🔄 (modifies the list).  
   - `sorted(my_list)` 🆕 (returns a new sorted list).  
   
+### **What's Next?** 🚀  
+
+- Explore **programming language concepts**.  
+- Learn **OOP, exception handling, concurrency, and event-driven programming**.  
+- Use **Java** as the main example (**imperative + OOP**).  
+- Discuss **design choices**—every language has trade-offs.  
+- Understand why there are **so many languages** (and why new ones keep coming! 😆).  
+
