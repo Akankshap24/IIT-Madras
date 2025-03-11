@@ -2,6 +2,8 @@
 
 ## 💻 Programming Languages  
 
+#### Lecture - 1
+
 - A way to communicate with computers using instructions.  
 - In the beginning, closely linked to how computers work internally.  
 - Computers store values in memory and use registers for calculations.  
@@ -122,7 +124,7 @@ def sum_square_even(n):
 - Discuss **design choices**—every language has trade-offs.  
 - Understand why there are **so many languages** (and why new ones keep coming! 😆).  
 
-
+#### Lecture - 2 
 ### 🔹 The Role of Types  
 
 - Ensure **consistent interpretation** of binary data.  
@@ -165,3 +167,58 @@ def sum_square_even(n):
           if n % i == 0:
               factorlst = factorlist + [i]  # ❌ Typo here! (`factorlst` instead of `factorlist`)
       return factorlist
+
+### 🔹 Empty User-Defined Objects  
+
+- A **linked list** is a sequence of objects of type `Node`.  
+- In `Python`, an **empty linked list** is often represented by `None`.  
+- Example:  
+  ```python
+  class Node:
+      def __init__(self, value):
+          self.value = value
+          self.next = None
+
+  l = None  # Represents an empty linked list
+
+### 🔹 Types of Organizing Concepts  
+
+- **Type synonyms** make code clearer.  
+  - Example:  
+    ```python
+    Point2D = tuple[float, float]  # A 2D point
+    Point3D = tuple[float, float, float]  # A 3D point
+    ```
+  - Using `Point2D` and `Point3D` improves readability ✅.  
+
+- **Advanced types** help structure programs.  
+  - Example: In **banking**, `Account` and `Customer` are **separate types**.  
+  - **Deposits, withdrawals, and transfers** apply to `Account`, not `Customer`.  
+  - **Updating details** applies to `Customer`, not `Account`.  
+
+### 🔹 Static Analysis  
+
+- **Find errors early** to save time & effort ✅.  
+- **Compilers can't guarantee correctness** (Halting problem – Alan Turing).  
+- **Static typing** detects errors at **compile time** 🛠️.  
+  - Dynamic typing catches them **only at runtime**.  
+  - Runtime checks **slow down execution** ⏳.  
+- **Optimizations with static analysis** 🚀:  
+  - Re-order statements for efficient reads/writes.  
+  - Reuse previously computed expressions.  
+
+### 🔹 Summary  
+
+- **Why are types important?**  
+  - Help interpret **bit sequences** in memory.  
+  - Organize **code in a meaningful way** 🏗️.  
+  - Allow compilers to **catch bugs early** & **optimize performance** 🚀.  
+
+- **Automatic Type Inference** 🔍  
+  - Some languages **guess types** based on usage.  
+  - Example:  
+    ```python
+    x = 7  
+    y = x + 15  # y is inferred as int
+    ```
+  - If types remain **consistent**, the program works smoothly ✅.  
