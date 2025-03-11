@@ -95,3 +95,22 @@ def sum_square_even(n):
 - **Strict type-checking** prevents errors:  
   - **Wrong expressions** (e.g., **dimension mismatch** in math).  
   - **Incorrect assignments** (e.g., assigning `text` to a `number` variable).  
+
+## 🚀 Abstract Data Types & Object-Oriented Programming  
+
+### 📦 Collections Matter  
+- Examples: `📚 Arrays`, `📋 Lists`, `📖 Dictionaries`.  
+
+### 🏗️ Abstract Data Types (ADTs)  
+- A **structured collection** with a fixed interface.  
+- **Example:** A `🗂️ Stack` allows only `⬆️ push` and `⬇️ pop` operations.  
+- **Priority Queue** supports `➕ insert` and `❌ delete-max`.  
+- Can be implemented using **sorted/unsorted lists** or a **heap**.  
+
+### 🏛️ Object-Oriented Programming (OOP)  
+- Focuses on 🔹 `data types` and their behavior.  
+- Functions are called **through objects** instead of passing data.  
+- **Example in Python:**  
+  - `my_list.sort()`🔄 (modifies the list).  
+  - `sorted(my_list)` 🆕 (returns a new sorted list).  
+  
