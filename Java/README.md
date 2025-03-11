@@ -122,3 +122,46 @@ def sum_square_even(n):
 - Discuss **design choices**—every language has trade-offs.  
 - Understand why there are **so many languages** (and why new ones keep coming! 😆).  
 
+
+### 🔹 The Role of Types  
+
+- Ensure **consistent interpretation** of binary data.  
+- Define **how bits are viewed** (e.g., `integers`, `floats`, `characters`).  
+- Control:  
+  - **Allowed values** (range, precision).  
+  - **Valid operations** (e.g., addition for numbers, not for text).  
+- Help **structure computation** by defining concepts:  
+  - **Example:** `Point → (Float, Float)`, `Banking → Account Types & Customers`.  
+- **Catch bugs early** 🐞:  
+  - Prevent **incorrect expressions** (e.g., mismatched types).  
+  - Avoid **wrong assignments** (e.g., assigning text to a number).  
+
+### 🔹 Dynamic vs Static Typing  
+
+- Every **variable** has a **type**.  
+- How is the **type** determined?  
+
+#### 🔹 Dynamic Typing (`Python` 🐍)  
+- Type is based on the **current value**.  
+- Example:  
+  ```python
+  x = 10    # x is an `int`
+  x = 7.5   # now x is a `float`
+  ```
+  ```c
+  int x;     // `x` must always store an integer
+  float a;   // `a` must always store a float
+  ```
+
+### 🔹 Static Typing Helps Catch Errors Early  
+
+- In **dynamically typed languages** like `Python`, typos can cause subtle bugs.  
+- Example:  
+
+  ```python
+  def factors(n):
+      factorlist = []
+      for i in range(1, n + 1):
+          if n % i == 0:
+              factorlst = factorlist + [i]  # ❌ Typo here! (`factorlst` instead of `factorlist`)
+      return factorlist
