@@ -42,3 +42,45 @@
 | **Intermediate Variables** | Commonly used | Typically avoided |
 | **Example**        | Procedural languages (C, Java) | Functional languages (Haskell, SQL) |
 
+## Imperative vs Declarative Programming, by Example  
+
+### 📝 Adding Values in a List  
+
+#### 🏗️ Imperative Approach  
+
+```python
+def sum_list(l):
+    sum = 0
+    for x in l:
+        sum += x
+    return sum
+```
+- **Intermediate values:** `sum`, `x`  
+- **Explicit iteration:** Examines each element in the list.
+
+### 🎯 Declarative (in Python)  
+
+```python
+def sum_list(l):
+    if l == []:
+        return 0
+    else:
+        return l[0] + sum_list(l[1:])
+```
+- **Base case:** An empty list sums to `0`.  
+- **Inductive step:** Add the first element to the sum of the rest.  
+- **No extra variables used.**  
+
+### 🏗️ Imperative Approach (Python)  
+
+```python
+def sum_square_even(n):
+    sum = 0
+    for x in range(n + 1):
+        if x % 2 == 0:
+            sum += x * x
+    return sum
+```
+- **Uses loops and conditions** to find even numbers and square them.  
+- **Can be written in a functional style** to improve reusability.  
+- **Helps break the problem into smaller, reusable units of code.**  
