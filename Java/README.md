@@ -318,3 +318,22 @@ def sum_square_even(n):
   - **Heap** → Stores dynamically allocated data.  
     - Outlives function execution.  
     - Requires **manual deallocation** (`free()`) or **automatic garbage collection**.  
+
+#### Lecture - 4
+### **Abstraction and Modularity: Stepwise Refinement**  
+
+- **Break down tasks** into smaller subtasks.  
+- **Refine each subtask** for better clarity.  
+- **Different people** can work on separate subtasks.  
+
+#### **Example: Print First 1000 Prime Numbers**  
+1. **High-level Plan**:  
+   - Create a table `p`.  
+   - Fill `p` with the first 1000 primes.  
+   - Print `p`.  
+
+2. **Refined Implementation**:  
+   - Declare `integer array p[1:1000]`.  
+   - Loop through `k = 1 to 1000`:  
+     - Assign `p[k]` the `k`th prime number.  
+   - Print all values of `p[k]`.  
