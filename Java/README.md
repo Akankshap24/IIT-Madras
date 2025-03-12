@@ -222,3 +222,99 @@ def sum_square_even(n):
     y = x + 15  # y is inferred as int
     ```
   - If types remain **consistent**, the program works smoothly ✅.  
+
+#### Lecture - 3
+### 🔹 Memory Management  
+
+- **Keeping Track of Variables**  
+  - Variables store **intermediate values** during computation.  
+  - Can be **local** (inside a function) or **global** (accessible everywhere).  
+  - **Dynamic data** (e.g., nodes in a list) are created at runtime.  
+
+- **Scope of a Variable** 📌  
+  - Defines **where** a variable can be used.  
+  - Example: A variable `x` inside `f()` is **not available** in `g()`.  
+
+- **Lifetime of a Variable** ⏳  
+  - Defines **how long** memory is allocated.  
+  - Example: `x` in `f()` exists **until** `f()` finishes running.  
+  - **Hole in the Scope**: A variable **exists** but is **not accessible** in some parts of the code.  
+
+### 🔹 Memory Stack  
+
+- **Function Storage**  
+  - Each function gets **storage** for local variables.  
+  - When a function is called, an **activation record** is created.  
+  - These records are **stacked** and removed when the function exits.  
+
+- **Stack Structure** 🏗️  
+  - **Control link** → Points to the previous record.  
+  - **Return value link** → Stores the result of the function.  
+
+- **Example: Calling `factorial(3)`**  
+  - `factorial(3)` calls `factorial(2)`, and so on...  
+  - Each call **adds a new record** on the stack.  
+
+- **Scope of a Variable** 📌  
+  - The **top activation record** holds the current function's variables.  
+  - **Global variables** can be accessed by following control links.  
+
+- **Lifetime of a Variable** ⏳  
+  - Memory remains allocated **as long as it's on the stack**.  
+
+    ![alt text](image.png)
+
+### **Passing Arguments to a Function**  
+
+- When a function is called, **arguments** are substituted for **parameters**.  
+- Parameters are stored in the **activation record** of the function.  
+- Works like **implicit assignment** at the start of the function.  
+
+#### **Two Ways to Pass Arguments**  
+1. **Call by Value** 📥  
+   - Copies the argument's value into the parameter.  
+   - **Changes inside the function do not affect the original variable**.  
+
+2. **Call by Reference** 🔗  
+   - The parameter **points to the same memory location** as the argument.  
+   - **Modifications inside the function affect the original variable** (side effects).  
+   - **However, the reference itself cannot be changed**.  
+
+### **Heap** 🗂️  
+
+- Used for **dynamic memory allocation**, outlives function execution.  
+- Needed when storing data **beyond a function's scope** (e.g., linked list nodes).  
+- **Heap vs Stack**:  
+  - **Heap** → Persistent storage, manually managed.  
+  - **Stack** → Temporary storage for function calls.  
+- **Not the same as the `heap` data structure** (priority queues).  
+![alt text](image-1.png)
+
+### Managing Heap Storage 🗑️  
+
+- **Stack variables** are automatically deallocated when a function exits.  
+- **Heap storage** must be managed to avoid `dead storage` (unreachable memory).  
+
+#### Ways to Manage Heap Memory 
+1. **Manual Memory Management** (e.g., C)  
+   - Programmer allocates (`malloc(...)`) and frees (`free(p)`) memory.  
+   - Error-prone → Can cause `memory leaks` and `invalid accesses`.  
+
+2. **Automatic Garbage Collection** (e.g., Java, Python)  
+   - Runtime `detects and removes` unused memory.  
+   - `Marks` reachable storage, `frees` unmarked memory.  
+   - `Trade-off` → Easier for programmers but adds performance overhead.  
+
+### **Summary** 📝  
+
+- **Variables have**:  
+  - **Scope** → Availability in the program.  
+  - **Lifetime** → Duration of storage allocation.  
+
+- **Memory Management**:  
+  - **Stack** → Stores activation records for function calls.  
+    - `Control link` → Points to previous record.  
+    - `Return value link` → Stores function results.  
+  - **Heap** → Stores dynamically allocated data.  
+    - Outlives function execution.  
+    - Requires **manual deallocation** (`free()`) or **automatic garbage collection**.  
