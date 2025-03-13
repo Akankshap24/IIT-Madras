@@ -337,3 +337,17 @@ def sum_square_even(n):
    - Loop through `k = 1 to 1000`:  
      - Assign `p[k]` the `k`th prime number.  
    - Print all values of `p[k]`.  
+
+### **Data Refinement in a Banking Application**  
+
+- **Core Functions**:  
+  - `CreateAccount()`, `Deposit()/Withdraw()`, `PrintStatement()`.  
+- **Initial Representation**:  
+  - Store only **current balance** in an array.  
+
+#### **Refinement**  
+- **Enhance `PrintStatement()`** → Add `PrintTransactions()`.  
+- **New Requirement** → Track transactions for each account.  
+- **Impact**:  
+  - Data representation changes.  
+  - Other account-related functions must be updated accordingly.  
