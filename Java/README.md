@@ -400,3 +400,21 @@ def sum_square_even(n):
   - **Control flow:** Functions & procedures.  
   - **Data abstraction:** ADTs & Object-Oriented Programming.  
 
+#### Lecture - 5
+### **Objects**  
+
+- **Objects = Abstract Data Types (ADTs)**  
+  - Encapsulate **hidden data** with **public operations**.  
+  - Interact via **methods, messages, or member functions**.  
+
+- **Encapsulation of data & functionality:**  
+  - Can represent a **single value** (e.g., a counter).  
+  - Can be as complex as a **filesystem or database**.  
+
+- **Key Features of Object-Oriented Programming:**  
+  - **Abstraction** → Hide implementation details.  
+  - **Subtyping** → Define hierarchical relationships.  
+  - **Dynamic Lookup** → Resolve methods at runtime.  
+  - **Inheritance** → Reuse & extend existing functionality.  
+
+
