@@ -487,3 +487,40 @@ def sum_square_even(n):
 
 - **Key Concept:**  
   - **Single hierarchy** often captures both subtyping and inheritance, but they serve different purposes.  
+
+### **Subtyping vs. Inheritance**  
+
+- **Deque (Double-Ended Queue)**  
+  - Supports `insert-front()`, `delete-front()`, `insert-rear()`, and `delete-rear()`.  
+  - Can be used to **implement** a **Stack** or a **Queue**.  
+
+- **Inheritance Example:**  
+  - `Stack` uses only `insert-front()`, `delete-front()`.  
+  - `Queue` uses only `insert-rear()`, `delete-front()`.  
+  - `Stack` and `Queue` **inherit** from `Deque` to **reuse implementation**.  
+
+- **Why Stack & Queue are NOT Subtypes of Deque?**  
+  - If `v` of type `Deque` points to a `Stack`, calling `insert-rear()` or `delete-rear()` is **invalid**.  
+  - If `v` points to a `Queue`, calling `insert-front()` or `delete-rear()` is **invalid**.  
+  - **Conclusion:** `Stack` and `Queue` are not subtypes of `Deque` because their **interfaces are incompatible**.  
+  - In fact, **Deque is a subtype of both Stack and Queue** because it supports their operations.  
+
+### **Summary**  
+
+- **Objects** → Similar to Abstract Data Types (ADTs)  
+  - Encapsulate data and functionality in a uniform way.  
+
+#### **Key Features of Object-Oriented Programming (OOP)**  
+
+1. **Abstraction**  
+   - Public interface, private implementation (like ADTs).  
+
+2. **Subtyping**  
+   - Types arranged in a hierarchy.  
+   - Objects of a subtype can be used where a parent type is expected.  
+
+3. **Dynamic Lookup**  
+   - Method implementation is determined at runtime, not compile-time.  
+
+4. **Inheritance**  
+   - Reuse of implementations from a parent type.  
