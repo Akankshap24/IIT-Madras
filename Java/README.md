@@ -351,3 +351,52 @@ def sum_square_even(n):
 - **Impact**:  
   - Data representation changes.  
   - Other account-related functions must be updated accordingly.  
+
+### **Modular Software Development**  
+
+- **Divide solution into components** using **stepwise refinement**.  
+- **Prototype each component** to test design.  
+
+#### **Key Elements of a Component**  
+- **Interface** → What is visible (e.g., function calls).  
+- **Specification** → Expected behavior through the interface.  
+
+#### **Improving Components**  
+- Modify **internals** while keeping the **interface and behavior consistent**.  
+- **Basic example**: A function  
+  - **Interface** → Function header, arguments, return type.  
+  - **Specification** → Expected input-output behavior.  
+
+#### **Challenges**  
+- **Writing clear specifications** → Balance **abstraction and detail**.  
+- **Checking correctness is hard** (Halting problem ❌).  
+
+### **Programming Language Support for Abstraction**  
+
+- **Control Abstraction:**  
+  - Functions & procedures **encapsulate code** for reuse.  
+
+- **Data Abstraction:**  
+  - **Abstract Data Types (ADTs):** Define values & permitted operations.  
+  - **Internal details hidden**; access only through a public interface.  
+  - Example: A `stack` implemented as a list should **not expose** internal elements.  
+
+- **Object-Oriented Programming (OOP):**  
+  - **Organizes ADTs in a hierarchy** with inheritance & subtyping.  
+  - Allows **code reuse** through implicit implementation sharing.  
+
+### **Summary**  
+
+- **Breaking down complex tasks** into smaller components:  
+  - **Top-down:** Refine tasks into subtasks.  
+  - **Bottom-up:** Combine simple building blocks.  
+
+- **Modular component design:**  
+  - **Interface & specification** define behavior.  
+  - **Prototype first** to validate design.  
+  - Reimplement independently while **preserving interfaces**.  
+
+- **Programming Language Support for Abstraction:**  
+  - **Control flow:** Functions & procedures.  
+  - **Data abstraction:** ADTs & Object-Oriented Programming.  
+
