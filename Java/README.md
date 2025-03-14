@@ -457,3 +457,18 @@ def sum_square_even(n):
   - Think of subtypes as **subsets** → If `A ⊆ B`, then every `A` is also in `B`.  
   - If `B` has a method `f()`, every `A` object **must** support `f()`.  
   - But **A can have a different implementation** of `f()`.  
+
+### **Dynamic Lookup in Object-Oriented Programming**  
+
+- **Static vs. Dynamic Behavior**  
+  - **Static:** Determines if a method can be called on an object (**type-checking**).  
+  - **Dynamic:** Defines how the method behaves based on the object's type at runtime.  
+
+- **Examples:**  
+  - **Simulation Queue:** All events have a `simulate()` method, but each event type behaves differently.  
+  - **Graphics Application:** Different shapes have a `render()` method, but each shape "knows" how to draw itself.  
+
+- **Dynamic Lookup vs. Overloading**  
+  - **Overloading:** `+` works for both `int` and `float`, but the choice is based on static type.  
+  - **Dynamic Lookup:** A variable `v` of type `B` can refer to an object of subtype `A`.  
+  - **Method execution depends on `A`'s implementation at runtime**, not `B`'s static type.  
