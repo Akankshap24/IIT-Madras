@@ -429,3 +429,31 @@ def sum_square_even(n):
   - Queue must handle **multiple event types** while maintaining type safety.  
   - Need a **generic simulation operation** for different events.  
   - Avoid excessive **case-checking** in the simulation process.  
+
+### **Abstraction in Object-Oriented Programming**  
+
+- **Objects = Abstract Data Types (ADTs)**  
+  - **Public Interface:** Defines allowed interactions.  
+  - **Private Implementation:** Hidden details.  
+  - Changes in implementation **should not affect** how the object is used.  
+
+- **Data-Centric Approach:**  
+  - Focus on **what data** needs to be stored & manipulated.  
+  - **Stepwise refinement** affects both **code & data**.  
+  - Methods are **tied to data**, making updates easier.  
+
+### **Subtyping in Object-Oriented Programming**  
+
+- **Problem:**  
+  - A **well-typed queue** should hold values of a fixed type.  
+  - But in practice, it needs to store **different types of objects**.  
+
+- **Solution: Type Hierarchy**  
+  - A **subtype** is a **specialization** of a type.  
+  - **If A is a subtype of B**, then **A can be used wherever B is required**.  
+  - Every object of **A is also an object of B**.  
+
+- **Key Concept:**  
+  - Think of subtypes as **subsets** → If `A ⊆ B`, then every `A` is also in `B`.  
+  - If `B` has a method `f()`, every `A` object **must** support `f()`.  
+  - But **A can have a different implementation** of `f()`.  
