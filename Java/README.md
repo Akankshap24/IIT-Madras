@@ -472,3 +472,18 @@ def sum_square_even(n):
   - **Overloading:** `+` works for both `int` and `float`, but the choice is based on static type.  
   - **Dynamic Lookup:** A variable `v` of type `B` can refer to an object of subtype `A`.  
   - **Method execution depends on `A`'s implementation at runtime**, not `B`'s static type.  
+
+### **Inheritance in Object-Oriented Programming**  
+
+- **Reusing Implementations**  
+  - Example: **Employee Hierarchy**  
+    - `Employee`: Stores personal data, date of joining.  
+    - `Manager`: Inherits `Employee` data and adds fields like **promotion date** and **seniority**.  
+
+- **Subtyping vs. Inheritance**  
+  - **Subtyping:** Defines relationships between interfaces (what an object can do).  
+  - **Inheritance:** Defines relationships between implementations (how it works).  
+  - **Rule:** A class `A` can inherit from `B` **only if** `A` is a subtype of `B`.  
+
+- **Key Concept:**  
+  - **Single hierarchy** often captures both subtyping and inheritance, but they serve different purposes.  
