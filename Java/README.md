@@ -417,4 +417,15 @@ def sum_square_even(n):
   - **Dynamic Lookup** → Resolve methods at runtime.  
   - **Inheritance** → Reuse & extend existing functionality.  
 
+### **History of Object-Oriented Programming**  
 
+- **Origin:** First introduced in `Simula` (1960s) for **event-based simulation**.  
+- **Basic Simulation Pattern:**  
+  1. Maintain a **queue** of events.  
+  2. Simulate the **event at the front** of the queue.  
+  3. Add **new events** to the queue.  
+
+- **Challenges:**  
+  - Queue must handle **multiple event types** while maintaining type safety.  
+  - Need a **generic simulation operation** for different events.  
+  - Avoid excessive **case-checking** in the simulation process.  
