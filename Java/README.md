@@ -524,3 +524,19 @@ def sum_square_even(n):
 
 4. **Inheritance**  
    - Reuse of implementations from a parent type.  
+
+#### Lecture - 6
+### **Programming with Objects**  
+
+- **Objects** → Similar to Abstract Data Types (ADTs)  
+  - Encapsulate hidden data with public operations (methods).  
+
+#### **Class vs Object**  
+
+- **Class** → Template for a data type  
+  - Defines how data is stored.  
+  - Specifies public methods to manipulate data.  
+
+- **Object** → Concrete instance of a class  
+  - Each object has its own copy of local data.  
+  - Methods are invoked on objects (like sending a message).  
