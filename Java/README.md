@@ -540,3 +540,25 @@ def sum_square_even(n):
 - **Object** → Concrete instance of a class  
   - Each object has its own copy of local data.  
   - Methods are invoked on objects (like sending a message).  
+
+### **Example: 2D Points**
+
+- A **Point** has coordinates \((x, y)\).  
+- Each **point object** stores its own `x` and `y` values (instance variables).  
+- Access instance variables using `p.x` and `p.y`.  
+- `self` refers to the current object → `self.x`, `self.y`.  
+
+#### **Constructor in Python**  
+- When creating an object, a **constructor function** initializes it.  
+- In Python, the constructor is named `__init__()`.  
+- The first parameter is always `self`.  
+
+#### **Example Code**  
+```python
+class Point:
+    def __init__(self, x, y):  # Constructor
+        self.x = x
+        self.y = y
+
+p1 = Point(3, 4)
+print(p1.x, p1.y)  # Output: 3 4
