@@ -562,3 +562,26 @@ class Point:
 
 p1 = Point(3, 4)
 print(p1.x, p1.y)  # Output: 3 4
+```
+### **Adding Methods to a Class**
+
+#### **Translation: Shift a Point**
+- Updates instance variables (`x`, `y`) by shifting the point.  
+- **Modifies the object state**.
+
+```python
+# Inside the Point class
+def translate(self, dx, dy):
+    self.x += dx
+    self.y += dy
+```
+- Distance from the Origin
+- Computes distance from (0,0).
+- Does not modify object state.
+
+```Python
+# Inside the Point class
+def odistance(self):
+    import math
+    return math.sqrt(self.x**2 + self.y**2)
+```
